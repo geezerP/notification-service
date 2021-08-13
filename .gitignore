@@ -152,5 +152,4 @@ fabric.properties
 .dynamodb/
 
 
-serviceAccountKey.json
-nodemon.json
+package-lock.json
