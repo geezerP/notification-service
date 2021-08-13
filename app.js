@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const smsRoutes = require('./api/routes/sms');
+const tokenRoute = require('./api/routes/token')
 const notificationsRoutes = require('./api/routes/notifications');
 
 app.use(morgan('dev'));
@@ -20,6 +21,7 @@ app.use((req, res, next) => {
 
 app.use('/sms', smsRoutes);
 app.use('/notifications', notificationsRoutes)
+app.use('/token', tokenRoute)
 
 app.use((req, res, next) => {
     const error = new Error("Route doesn't Exist");
