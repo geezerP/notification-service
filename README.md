@@ -38,6 +38,7 @@ To Run the Project:
 * run `sudo docker-compose up` it will be listening at localhost:3000
 
 ***The API contains 6 endpoints*** 
+
 **You can see a full Documentation for the API and examples from [here](https://documenter.getpostman.com/view/8583612/Tzz7PHnJ)**
 
 
@@ -50,5 +51,20 @@ To Run the Project:
      * /sms/individual-sms
   3. /token
   
+***Architecture Diagram***
+* [Here](https://miro.com/app/board/o9J_l2FtDBM=/) is the architecture diagram. (Some components will need to be fleshed out) 
+
+***How other Microservices can communicate with this service:***
+
+* As indicated on the design diagram as part of improvement I would need to implement some RPC queue to enable full service communication. 
+
+* Currently all other services will communicate with this service through the restful service exposed through endpoints 
+
+***Future IMprovements:***
+
+* Implement the AMQP and MQTT consumers and publishers to enable microservice communication. 
+* Implement the API Gateway.
+* Refactor based on feedback.
+
 
 
