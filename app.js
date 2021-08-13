@@ -3,6 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const smsRoutes = require('./api/routes/sms');
 const tokenRoute = require('./api/routes/token')
+const notificationsRoutes = require('./api/routes/notifications');
 
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
