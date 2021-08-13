@@ -60,7 +60,7 @@ To Run the Project:
 
 * Currently all other services will communicate with this service through the restful service exposed through endpoints 
 
-***Future IMprovements:***
+***Future Improvements:***
 
 * Implement the AMQP and MQTT consumers and publishers to enable microservice communication. 
 * Implement the API Gateway.
