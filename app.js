@@ -1,12 +1,12 @@
 const express = require('express');
-const app = express();
 const morgan = require('morgan');
-const bodyParser = require('body-parser');
 const smsRoutes = require('./api/routes/sms');
+const tokenRoute = require('./api/routes/token')
+const app = express();
 
 app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -19,6 +19,8 @@ app.use((req, res, next) => {
 });
 
 app.use('/sms', smsRoutes);
+app.use('/notifications', notificationsRoutes)
+app.use('/token', tokenRoute)
 
 app.use((req, res, next) => {
     const error = new Error("Route doesn't Exist");
