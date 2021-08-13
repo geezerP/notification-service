@@ -15,10 +15,17 @@
     "url": "git+https://github.com/geezerP/notification-service.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Meshack Mwaura <mwaurameshack64@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/geezerP/notification-service/issues"
   },
-  "homepage": "https://github.com/geezerP/notification-service#readme"
+  "homepage": "https://github.com/geezerP/notification-service#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "mongoose": "^5.13.7",
+    "morgan": "^1.10.0"
+  }
 }
