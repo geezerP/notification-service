@@ -38,6 +38,8 @@ To Run the Project:
 * run `sudo docker-compose up` it will be listening at localhost:3000
 
 The API contains 6 endpoints 
+**You can see a full Documentation for the API and examples from [here](https://documenter.getpostman.com/view/8583612/Tzz7PHnJ)**
+
 
   1. /notifications
      * /notifications/send-notifications-to-all
